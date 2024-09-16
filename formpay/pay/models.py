@@ -1,7 +1,4 @@
 from django.db import models
-from django.core.validators import MinValueValidator
-
-# Create your models here.
 
 
 class Pay(models.Model):
@@ -24,3 +21,4 @@ class Pay(models.Model):
         verbose_name='Email клиента',
         max_length=64,
     )
+    created = models.DateTimeField(auto_now_add=True)
